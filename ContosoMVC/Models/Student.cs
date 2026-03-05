@@ -9,8 +9,10 @@ namespace ContosoMVC.Models
         public int ID { get; set; }
         [Display(Name = "Last Name")]
         public required string LastName { get; set; }
+
         [Display(Name = "First Mid Name")]
         public required string FirstMidName { get; set; }
+
         [Display(Name = "Enrollment Date")]
         public DateTime EnrollmentDate { get; set; }
 
