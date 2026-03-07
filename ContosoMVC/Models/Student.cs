@@ -10,7 +10,7 @@ namespace ContosoMVC.Models
         [Display(Name = "Last Name")]
         public required string LastName { get; set; }
 
-        [Display(Name = "First Mid Name")]
+        [Display(Name = "First Name")]
         public required string FirstMidName { get; set; }
 
         [Display(Name = "Enrollment Date")]
