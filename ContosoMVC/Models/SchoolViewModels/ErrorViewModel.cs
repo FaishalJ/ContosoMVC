@@ -1,4 +1,4 @@
-namespace ContosoMVC.Models
+namespace ContosoMVC.Models.SchoolViewModels
 {
     public class ErrorViewModel
     {

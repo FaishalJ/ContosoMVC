@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
 
 namespace ContosoMVC.Models
 {
@@ -9,8 +10,9 @@ namespace ContosoMVC.Models
 
         [StringLength(50)]
         [Display(Name = "Office Location")]
-        public required string Location { get; set; }
+        public string? Location { get; set; }
 
+        [ValidateNever]
         public Instructor Instructor { get; set; } = null!;
     }
 }

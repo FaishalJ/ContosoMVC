@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ContosoMVC.Models
@@ -19,6 +20,7 @@ namespace ContosoMVC.Models
 
         public int DepartmentID { get; set; }
 
+        [ValidateNever]
         public Department Department { get; set; } = null!;
         public ICollection<Enrollment> Enrollments { get; set; } = [];
         public ICollection<CourseAssignment> CourseAssignments { get; set; } = [];
