@@ -19,6 +19,8 @@ namespace ContosoMVC.Models
         [Display(Name = "Start Date")]
         public DateTime StartDate { get; set; }
 
+        [Timestamp]
+        public byte[] RowVersion { get; set; } = null!;
         public int? InstructorID { get; set; }
         public Instructor? Administrator { get; set; }
         public ICollection<Course> Courses { get; set; } = [];
